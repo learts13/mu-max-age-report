@@ -1,7 +1,7 @@
 *{box-sizing:border-box}body{margin:0;font-family:system-ui,Segoe UI,Arial,sans-serif;background:#0e1117;color:#e6edf3;line-height:1.5;transition:.2s}
 body.light{background:#f6f8fa;color:#1f2328}
-#ptBtn,#enBtn,#thBtn,#themeBtn{background:#1d4a3c;color:#fff;border:0;padding:.5rem .9rem;border-radius:8px;cursor:pointer;font-size:.9rem}
-.langbar{position:fixed;top:1rem;right:1rem;z-index:10;display:flex;gap:.4rem}
+#ptBtn,#enBtn,#thBtn,#themeBtn{background:#1d4a3c;color:#fff;border:0;padding:.4rem .6rem;border-radius:8px;cursor:pointer;font-size:.85rem}
+.langbar{position:fixed;top:1rem;right:1rem;z-index:10;display:flex;gap:.3rem}
 .langbtn.active{background:#7ee787;color:#0e1117;font-weight:700}
 .langbtn:not(.active){opacity:.7}
 #themeBtn{background:#30363d}
