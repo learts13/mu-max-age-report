@@ -8,8 +8,8 @@ header{background:linear-gradient(135deg,#1d4a3c,#0e1117);padding:2rem;color:#ff
 body.light header{background:linear-gradient(135deg,#1d4a3c,#0e6050);color:#fff}
 h1{margin:0;font-size:1.8rem}
 .sub{opacity:.85;margin:.3rem 0}
-.toprow{display:flex;gap:1rem;flex-wrap:wrap;align-items:flex-start;margin:1rem 0}
-.cards{display:flex;gap:.8rem;flex:1;flex-wrap:wrap;min-width:260px}
+.toprow{display:flex;gap:.5rem;flex-wrap:wrap;align-items:flex-start;margin:1rem 0}
+.cards{display:flex;gap:.8rem;flex:0 0 auto;flex-wrap:wrap;min-width:260px}
 .card{background:rgba(255,255,255,.08);border-radius:10px;padding:.8rem 1.1rem;min-width:120px}
 body.light .card{background:rgba(0,0,0,.05)}
 .cval{font-size:1.8rem;font-weight:700}.cval span{font-size:.9rem;opacity:.7}
