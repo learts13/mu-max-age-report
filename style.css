@@ -1,12 +1,15 @@
 *{box-sizing:border-box}body{margin:0;font-family:system-ui,Segoe UI,Arial,sans-serif;background:#0e1117;color:#e6edf3;line-height:1.5;transition:.2s}
 body.light{background:#f6f8fa;color:#1f2328}
-#langBtn,#themeBtn{position:fixed;top:1rem;z-index:10;background:#1d4a3c;color:#fff;border:0;padding:.5rem .9rem;border-radius:8px;cursor:pointer;font-size:.9rem}
-#langBtn{right:1rem}#themeBtn{right:7.5rem;background:#30363d}
+#ptBtn,#enBtn,#thBtn,#themeBtn{position:fixed;top:1rem;z-index:10;background:#1d4a3c;color:#fff;border:0;padding:.5rem .9rem;border-radius:8px;cursor:pointer;font-size:.9rem}
+#ptBtn{right:1rem}#enBtn{right:7.5rem}#thBtn{right:14rem}#themeBtn{right:21rem;background:#30363d}
+.langbtn.active{background:#7ee787;color:#0e1117;font-weight:700}
+.langbtn:not(.active){opacity:.7}
 header{background:linear-gradient(135deg,#1d4a3c,#0e1117);padding:2rem;color:#fff}
 body.light header{background:linear-gradient(135deg,#1d4a3c,#0e6050);color:#fff}
 h1{margin:0;font-size:1.8rem}
 .sub{opacity:.85;margin:.3rem 0}
-.cards{display:flex;gap:.8rem;margin:1rem 0;flex-wrap:wrap}
+.toprow{display:flex;gap:1rem;flex-wrap:wrap;align-items:flex-start;margin:1rem 0}
+.cards{display:flex;gap:.8rem;flex:1;flex-wrap:wrap;min-width:260px}
 .card{background:rgba(255,255,255,.08);border-radius:10px;padding:.8rem 1.1rem;min-width:120px}
 body.light .card{background:rgba(0,0,0,.05)}
 .cval{font-size:1.8rem;font-weight:700}.cval span{font-size:.9rem;opacity:.7}
@@ -19,7 +22,7 @@ body.light .card{background:rgba(0,0,0,.05)}
 .fbtn.active{background:#1d4a3c;color:#fff}
 #search{background:#21262d;color:#e6edf3;border:0;padding:.4rem .7rem;border-radius:8px;font-size:.85rem;min-width:160px}
 body.light #search,body.light .fbtn{background:#e6edf3;color:#1f2328}
-.vol{margin:.5rem 0;background:rgba(255,255,255,.05);border-radius:8px;padding:.5rem}
+.vol{flex:1;min-width:260px;align-self:stretch;background:rgba(255,255,255,.05);border-radius:8px;padding:.5rem}
 body.light .vol{background:rgba(0,0,0,.04)}
 main{max-width:900px;margin:0 auto;padding:1.5rem}
 .catsec{margin-top:1.2rem}
