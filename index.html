@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MU MAX Age . BR Community Feedback (Alpha SEA 15-21 Jul)</title>
 <meta property="og:title" content="MU MAX Age . BR Community Feedback">
-<meta property="og:description" content="Brazilian community voice on MU MAX Age Alpha (SEA). BR Demand Signal 94/100, 18 items.">
+<meta property="og:description" content="Brazilian community voice on MU MAX Age Alpha (SEA). Explicit BR demand 44/100, generic BR feedback 50%, 18 items.">
 <meta property="og:image" content="og-image.png">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
@@ -23,12 +23,13 @@
   <p class="sub" id="sub">Alpha SEA . July 15-21, 2026 . Brazilian community voice</p>
   <div class="toprow">
   <div class="cards">
-    <div class="card"><div class="cval" id="scoreval">94<span>/100</span></div><div class="clab" id="scorelab">BR Demand Signal</div>
-      <div class="bar"><div class="barfill" style="width:94%;background:#1d4a3c"></div></div></div>
+    <div class="card"><div class="cval" id="scoreval">44<span>/100</span></div><div class="clab" id="scorelab">Demanda BR explícita</div>
+      <div class="bar"><div class="barfill" style="width:44%;background:#9e7a00"></div></div>
+      <div class="sublab" id="scoregen" data-pg="50">Feedback BR genérico: 50%</div></div>
     <div class="card"><div class="cval">18</div><div class="clab" id="itemlab">Items collected</div></div>
     <div class="card"><div class="cval">1</div><div class="clab" id="daylab">Days covered</div></div>
   </div>
-  <p class="date" id="date">Updated 19/07/2026 18:20 BRT</p>
+  <p class="date" id="date">Updated 19/07/2026 18:24 BRT</p>
   <div class="filters">
     <button class="fbtn active" data-f="all" onclick="filterKind('all')">All</button>
     <button class="fbtn" data-f="auto" onclick="filterKind('auto')">Auto web</button>
@@ -57,7 +58,9 @@
       if(l==='en'){ document.documentElement.lang='en';
         document.getElementById('title').textContent='MU MAX Age . BR Community Feedback';
         document.getElementById('sub').textContent='Alpha SEA . July 15-21, 2026 . Brazilian community voice';
-        document.getElementById('scorelab').textContent='BR Demand Signal';
+        document.getElementById('scorelab').textContent='BR Demand Signal (explicit)';
+        var pg=document.getElementById('scoregen').getAttribute('data-pg');
+        document.getElementById('scoregen').textContent='Generic BR feedback: '+pg+'%';
         document.getElementById('itemlab').textContent='Items collected';
         document.getElementById('daylab').textContent='Days covered';
         document.getElementById('sumh').textContent='Summary';
@@ -70,7 +73,9 @@
       } else if(l==='th'){ document.documentElement.lang='th';
         document.getElementById('title').textContent='MU MAX Age . Feedback ชุมชนบราซิล';
         document.getElementById('sub').textContent='Alpha SEA . 15-21 ก.ค. 2026 . เสียงของผู้เล่นบราซิล';
-        document.getElementById('scorelab').textContent='สัญญาณความต้องการ BR';
+        document.getElementById('scorelab').textContent='สัญญาณความต้องการ BR (ชัดเจน)';
+        var pg=document.getElementById('scoregen').getAttribute('data-pg');
+        document.getElementById('scoregen').textContent='ฟีดแบ็ก BR ทั่วไป: '+pg+'%';
         document.getElementById('itemlab').textContent='รายการที่รวบรวม';
         document.getElementById('daylab').textContent='วันที่ครอบคลุม';
         document.getElementById('sumh').textContent='สรุป';
@@ -83,7 +88,9 @@
       } else { document.documentElement.lang='pt-BR';
         document.getElementById('title').textContent='MU MAX Age . Feedback da Comunidade BR';
         document.getElementById('sub').textContent='Alpha SEA . 15-21 julho 2026 . voz da comunidade brasileira';
-        document.getElementById('scorelab').textContent='Demand Signal BR';
+        document.getElementById('scorelab').textContent='Demanda BR explícita';
+        var pg=document.getElementById('scoregen').getAttribute('data-pg');
+        document.getElementById('scoregen').textContent='Feedback BR genérico: '+pg+'%';
         document.getElementById('itemlab').textContent='Itens coletados';
         document.getElementById('daylab').textContent='Dias cobertos';
         document.getElementById('sumh').textContent='Resumo';
