@@ -22,7 +22,7 @@ body.light .card{background:rgba(0,0,0,.05)}
 .fbtn.active{background:#1d4a3c;color:#fff}
 #search{background:#21262d;color:#e6edf3;border:0;padding:.4rem .7rem;border-radius:8px;font-size:.85rem;min-width:160px}
 body.light #search,body.light .fbtn{background:#e6edf3;color:#1f2328}
-.vol{flex:1;min-width:260px;align-self:stretch;background:rgba(255,255,255,.05);border-radius:8px;padding:.5rem}
+.vol{flex:1;min-width:260px;background:rgba(255,255,255,.05);border-radius:8px;padding:.5rem;align-self:flex-start}
 body.light .vol{background:rgba(0,0,0,.04)}
 main{max-width:900px;margin:0 auto;padding:1.5rem}
 .catsec{margin-top:1.2rem}
