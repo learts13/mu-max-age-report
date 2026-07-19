@@ -1,9 +1,10 @@
 *{box-sizing:border-box}body{margin:0;font-family:system-ui,Segoe UI,Arial,sans-serif;background:#0e1117;color:#e6edf3;line-height:1.5;transition:.2s}
 body.light{background:#f6f8fa;color:#1f2328}
-#ptBtn,#enBtn,#thBtn,#themeBtn{position:fixed;top:1rem;z-index:10;background:#1d4a3c;color:#fff;border:0;padding:.5rem .9rem;border-radius:8px;cursor:pointer;font-size:.9rem}
-#ptBtn{right:1rem}#enBtn{right:7.5rem}#thBtn{right:14rem}#themeBtn{right:21rem;background:#30363d}
+#ptBtn,#enBtn,#thBtn,#themeBtn{background:#1d4a3c;color:#fff;border:0;padding:.5rem .9rem;border-radius:8px;cursor:pointer;font-size:.9rem}
+.langbar{position:fixed;top:1rem;right:1rem;z-index:10;display:flex;gap:.4rem}
 .langbtn.active{background:#7ee787;color:#0e1117;font-weight:700}
 .langbtn:not(.active){opacity:.7}
+#themeBtn{background:#30363d}
 header{background:linear-gradient(135deg,#1d4a3c,#0e1117);padding:2rem;color:#fff}
 body.light header{background:linear-gradient(135deg,#1d4a3c,#0e6050);color:#fff}
 h1{margin:0;font-size:1.8rem}
