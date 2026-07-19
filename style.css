@@ -18,8 +18,9 @@ body.light .card{background:rgba(0,0,0,.05)}
 .clab{font-size:.75rem;opacity:.8;margin-top:.2rem}
 .bar{height:8px;background:rgba(255,255,255,.15);border-radius:4px;margin-top:.4rem;overflow:hidden}
 .barfill{height:100%;border-radius:4px}
-.date{opacity:.7;font-size:.85rem;margin:.3rem 0}
-.filters{display:flex;gap:.5rem;align-items:center;margin:.6rem 0;flex-wrap:wrap}
+.date{opacity:.7;font-size:.85rem;margin:0}
+.filterrow{display:flex;justify-content:space-between;align-items:center;gap:.5rem;flex-wrap:wrap;margin-top:.3rem}
+.filters{display:flex;gap:.5rem;align-items:center;margin:.3rem 0;flex-wrap:wrap}
 .fbtn{background:#21262d;color:#e6edf3;border:0;padding:.35rem .8rem;border-radius:8px;cursor:pointer;font-size:.85rem}
 .fbtn.active{background:#1d4a3c;color:#fff}
 #search{background:#21262d;color:#e6edf3;border:0;padding:.4rem .7rem;border-radius:8px;font-size:.85rem;min-width:160px}
