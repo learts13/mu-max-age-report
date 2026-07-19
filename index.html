@@ -28,12 +28,7 @@
     <div class="card"><div class="cval">18</div><div class="clab" id="itemlab">Items collected</div></div>
     <div class="card"><div class="cval">1</div><div class="clab" id="daylab">Days covered</div></div>
   </div>
-  <div class="vol">
-    <img src="grafico_barras_pt.png" data-pt="grafico_barras_pt.png" data-en="grafico_barras_en.png" data-th="grafico_barras_th.png" alt="Volume de menções BR por dia" class="gchart">
-    <img src="grafico_pizza_pt.png" data-pt="grafico_pizza_pt.png" data-en="grafico_pizza_en.png" data-th="grafico_pizza_th.png" alt="Distribuição por categoria" class="gchart">
-  </div>
-  </div>
-  <p class="date" id="date">Updated 19/07/2026 17:56 BRT</p>
+  <p class="date" id="date">Updated 19/07/2026 18:20 BRT</p>
   <div class="filters">
     <button class="fbtn active" data-f="all" onclick="filterKind('all')">All</button>
     <button class="fbtn" data-f="auto" onclick="filterKind('auto')">Auto web</button>
@@ -59,7 +54,6 @@
     function setLang(l){
       lang=l;
       document.querySelectorAll('.langbtn').forEach(function(b){ b.classList.toggle('active', b.id===l+'Btn'); });
-      document.querySelectorAll('.gchart').forEach(function(im){ im.src = im.getAttribute('data-'+l); });
       if(l==='en'){ document.documentElement.lang='en';
         document.getElementById('title').textContent='MU MAX Age . BR Community Feedback';
         document.getElementById('sub').textContent='Alpha SEA . July 15-21, 2026 . Brazilian community voice';
