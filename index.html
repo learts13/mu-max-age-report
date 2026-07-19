@@ -1,9 +1,44 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MU MAX Age — BR Community Feedback (Alpha SEA)</title>
-<style>body{font-family:system-ui,Arial,sans-serif;background:#0e1117;color:#e6edf3;margin:0;padding:3rem;text-align:center}h1{font-size:1.6rem}p{opacity:.7}</style>
-</head><body>
-<h1>MU MAX Age — BR Community Feedback</h1>
-<p>Alpha SEA · 15–21 July 2026 · report in progress. Final version by 22 July.</p>
+<title>MU MAX Age — BR Community Feedback (Alpha SEA 15–21 Jul)</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<button id="langBtn" onclick="toggleLang()">🇧🇷 PT-BR</button>
+<header>
+  <h1 id="title">MU MAX Age — BR Community Feedback</h1>
+  <p class="sub" id="sub">Alpha SEA · July 15–21, 2026 · Brazilian community voice</p>
+  <div class="score" id="score">BR Demand Signal Score: <strong>0/100</strong></div>
+  <p class="date" id="date">Generated on July 19, 2026</p>
+</header>
+<main id="main">
+<section data-pt-cat="Resumo" data-en-cat="Summary">
+  <h2 class="cat" id="sumh">Resumo</h2>
+  <p class="sumbody" id="sump" data-pt="Comunidade BR demonstrou discussão ativa durante o Alpha do MU MAX Age (SEA). O Demand Signal Score reflete o quanto os jogadores pedem um servidor LATAM/BR (ping, PT-BR, pagamento local). Categorias acima resumem aprovações, críticas, pedidos e prontidão de expansão."
+  data-en="Brazilian community showed active discussion during the MU MAX Age Alpha (SEA). The Demand Signal Score reflects how strongly players request a LATAM/BR server (ping, PT-BR, local payment). Categories above summarize approvals, criticisms, requests, and expansion readiness.">
+  Comunidade BR demonstrou discussão ativa durante o Alpha do MU MAX Age (SEA). O Demand Signal Score reflete o quanto os jogadores pedem um servidor LATAM/BR (ping, PT-BR, pagamento local). Categorias acima resumem aprovações, críticas, pedidos e prontidão de expansão.</p>
+</section>
+</main>
+<footer>Automated report · sources: X/Reddit/web + MU game Discord · delivered via GitHub Pages</footer>
+<script>
+var en = false;
+function toggleLang() {
+  en = !en;
+  document.getElementById('langBtn').textContent = en ? '🇺🇸 EN' : '🇧🇷 PT-BR';
+  document.documentElement.lang = en ? 'en' : 'pt-BR';
+  document.getElementById('title').textContent = en ? 'MU MAX Age — BR Community Feedback' : 'MU MAX Age — Feedback da Comunidade BR';
+  document.getElementById('sub').textContent = en ? 'Alpha SEA · July 15–21, 2026 · Brazilian community voice' : 'Alpha SEA · 15–21 julho 2026 · voz da comunidade brasileira';
+  document.getElementById('score').innerHTML = en ? 'BR Demand Signal Score: <strong>0/100</strong>' : 'Demand Signal Score (BR): <strong>0/100</strong>';
+  document.getElementById('date').textContent = en ? 'Generated on July 19, 2026' : 'Gerado em 19/07/2026';
+  document.getElementById('sumh').textContent = en ? 'Summary' : 'Resumo';
+  document.getElementById('sump').textContent = en ? document.getElementById('sump').getAttribute('data-en') : document.getElementById('sump').getAttribute('data-pt');
+  document.querySelectorAll('section[data-pt-cat]').forEach(function(s){
+    s.querySelector('.cat').textContent = en ? s.getAttribute('data-en-cat') : s.getAttribute('data-pt-cat');
+  });
+  document.querySelectorAll('li[data-pt]').forEach(function(li){
+    var tag = li.querySelector('.tag').outerHTML;
+    li.innerHTML = tag + ' ' + (en ? li.getAttribute('data-en') : li.getAttribute('data-pt'));
+  });
+}
+</script>
 </body></html>
