@@ -15,7 +15,6 @@
 <div class="langbar">
 <button id="ptBtn" class="langbtn" onclick="setLang('pt')" title="Português BR"><img src="flags/br.png" alt="BR"></button>
 <button id="enBtn" class="langbtn active" onclick="setLang('en')" title="English"><img src="flags/us.png" alt="US"></button>
-<button id="thBtn" class="langbtn" onclick="setLang('th')" title="Thai"><img src="flags/th.png" alt="TH"></button>
 <button id="themeBtn" onclick="toggleTheme()" title="Tema">🌙</button>
 </div>
 <header>
@@ -30,7 +29,7 @@
     <div class="card"><div class="cval">2</div><div class="clab" id="itemlab">Items collected</div></div>
     <div class="card"><div class="cval">1</div><div class="clab" id="daylab">Days covered</div></div>
   </div>
-  <p class="date" id="date">Updated 19/07/2026 23:40 BRT</p>
+  <p class="date" id="date">Updated 19/07/2026 23:42 BRT</p>
   </div>
   <div class="filters">
     <button class="fbtn active" data-f="all" onclick="filterKind('all')">All</button>
@@ -71,21 +70,6 @@
           var tag=li.querySelector('.tag').outerHTML; var sent=li.querySelector('.sent').outerHTML;
           var src=li.querySelector('.src')?li.querySelector('.src').outerHTML:'';
           li.innerHTML=sent+' '+tag+' '+li.getAttribute('data-en')+' '+src; });
-      } else if(l==='th'){ document.documentElement.lang='th';
-        document.getElementById('title').textContent='MU MAX Age . Feedback ชุมชนบราซิล';
-        document.getElementById('sub').textContent='Alpha SEA . เสียงของผู้เล่นบราซิล';
-        document.getElementById('scorelab').textContent=document.getElementById('scorelab').getAttribute('data-curado')==='1'?'เนื้อหาที่โดดเด่น':'สัญญาณความต้องการ BR (ชัดเจน)';
-        var pg=document.getElementById('scoregen'); if(pg){pg.textContent='ฟีดแบ็ก BR ทั่วไป: '+pg.getAttribute('data-pg')+'%';}
-        document.getElementById('itemlab').textContent='รายการที่รวบรวม';
-        document.getElementById('daylab').textContent='วันที่ครอบคลุม';
-        document.getElementById('sumh').textContent='สรุป';
-        document.getElementById('sump').textContent=document.getElementById('sump').getAttribute('data-th');
-        document.getElementById('ctxp').textContent=document.getElementById('ctxp').getAttribute('data-th');
-        document.querySelectorAll('section[data-pt-cat]').forEach(function(s){ s.querySelector('.catname').textContent=s.getAttribute('data-th-cat'); });
-        document.querySelectorAll('li.item[data-pt]').forEach(function(li){
-          var tag=li.querySelector('.tag').outerHTML; var sent=li.querySelector('.sent').outerHTML;
-          var src=li.querySelector('.src')?li.querySelector('.src').outerHTML:'';
-          li.innerHTML=sent+' '+tag+' '+li.getAttribute('data-th')+' '+src; });
       } else { document.documentElement.lang='pt-BR';
         document.getElementById('title').textContent='MU MAX Age . Feedback da Comunidade BR';
         document.getElementById('sub').textContent='Alpha SEA . voz da comunidade brasileira';
