@@ -23,13 +23,14 @@
   <p class="sub" id="sub">Alpha SEA . July 15-21, 2026 . Brazilian community voice</p>
   <div class="toprow">
   <div class="cards">
-    <div class="card"><div class="cval" id="scoreval">0<span>/100</span></div><div class="clab" id="scorelab">Demanda BR explícita</div>
-      <div class="bar"><div class="barfill" style="width:0%;background:#b3261e"></div></div>
-      <div class="sublab" id="scoregen" data-pg="33">Feedback BR genérico: 33%</div></div>
+    <div class="card"><div class="cval" id="scoreval">3<span>/100</span></div><div class="clab" id="scorelab" data-scorelabel="Conteúdo curado">Conteúdo curado</div>
+     <div class="bar"><div class="barfill" style="width:3%"></div></div>
+     
+    </div>
     <div class="card"><div class="cval">3</div><div class="clab" id="itemlab">Items collected</div></div>
     <div class="card"><div class="cval">1</div><div class="clab" id="daylab">Days covered</div></div>
   </div>
-  <p class="date" id="date">Updated 19/07/2026 22:45 BRT</p>
+  <p class="date" id="date">Updated 19/07/2026 22:54 BRT</p>
   </div>
   <div class="filters">
     <button class="fbtn active" data-f="all" onclick="filterKind('all')">All</button>
@@ -57,8 +58,7 @@
         document.getElementById('title').textContent='MU MAX Age . BR Community Feedback';
         document.getElementById('sub').textContent='Alpha SEA . July 15-21, 2026 . Brazilian community voice';
         document.getElementById('scorelab').textContent='BR Demand Signal (explicit)';
-        var pg=document.getElementById('scoregen').getAttribute('data-pg');
-        document.getElementById('scoregen').textContent='Generic BR feedback: '+pg+'%';
+        var pg=document.getElementById('scoregen'); if(pg){pg.textContent='Generic BR feedback: '+pg.getAttribute('data-pg')+'%';}
         document.getElementById('itemlab').textContent='Items collected';
         document.getElementById('daylab').textContent='Days covered';
         document.getElementById('sumh').textContent='Summary';
@@ -72,8 +72,7 @@
         document.getElementById('title').textContent='MU MAX Age . Feedback ชุมชนบราซิล';
         document.getElementById('sub').textContent='Alpha SEA . 15-21 ก.ค. 2026 . เสียงของผู้เล่นบราซิล';
         document.getElementById('scorelab').textContent='สัญญาณความต้องการ BR (ชัดเจน)';
-        var pg=document.getElementById('scoregen').getAttribute('data-pg');
-        document.getElementById('scoregen').textContent='ฟีดแบ็ก BR ทั่วไป: '+pg+'%';
+        var pg=document.getElementById('scoregen'); if(pg){pg.textContent='ฟีดแบ็ก BR ทั่วไป: '+pg.getAttribute('data-pg')+'%';}
         document.getElementById('itemlab').textContent='รายการที่รวบรวม';
         document.getElementById('daylab').textContent='วันที่ครอบคลุม';
         document.getElementById('sumh').textContent='สรุป';
@@ -87,8 +86,7 @@
         document.getElementById('title').textContent='MU MAX Age . Feedback da Comunidade BR';
         document.getElementById('sub').textContent='Alpha SEA . 15-21 julho 2026 . voz da comunidade brasileira';
         document.getElementById('scorelab').textContent='Demanda BR explícita';
-        var pg=document.getElementById('scoregen').getAttribute('data-pg');
-        document.getElementById('scoregen').textContent='Feedback BR genérico: '+pg+'%';
+        var pg=document.getElementById('scoregen'); if(pg){pg.textContent='Feedback BR genérico: '+pg.getAttribute('data-pg')+'%';}
         document.getElementById('itemlab').textContent='Itens coletados';
         document.getElementById('daylab').textContent='Dias cobertos';
         document.getElementById('sumh').textContent='Resumo';
