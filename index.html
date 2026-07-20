@@ -13,8 +13,8 @@
 <link rel="stylesheet" href="style.css"></head>
 <body>
 <div class="langbar">
-<button id="ptBtn" class="langbtn active" onclick="setLang('pt')" title="Português BR"><img src="flags/br.png" alt="BR"></button>
-<button id="enBtn" class="langbtn" onclick="setLang('en')" title="English"><img src="flags/us.png" alt="US"></button>
+<button id="ptBtn" class="langbtn" onclick="setLang('pt')" title="Português BR"><img src="flags/br.png" alt="BR"></button>
+<button id="enBtn" class="langbtn active" onclick="setLang('en')" title="English"><img src="flags/us.png" alt="US"></button>
 <button id="thBtn" class="langbtn" onclick="setLang('th')" title="Thai"><img src="flags/th.png" alt="TH"></button>
 <button id="themeBtn" onclick="toggleTheme()" title="Tema">🌙</button>
 </div>
@@ -30,7 +30,7 @@
     <div class="card"><div class="cval">2</div><div class="clab" id="itemlab">Items collected</div></div>
     <div class="card"><div class="cval">1</div><div class="clab" id="daylab">Days covered</div></div>
   </div>
-  <p class="date" id="date">Updated 19/07/2026 23:38 BRT</p>
+  <p class="date" id="date">Updated 19/07/2026 23:40 BRT</p>
   </div>
   <div class="filters">
     <button class="fbtn active" data-f="all" onclick="filterKind('all')">All</button>
@@ -118,5 +118,6 @@
         li.style.display = t.indexOf(q)>=0 ? '' : 'none';
       });
     }
+    setLang('en');
     </script>
     </body></html>
